@@ -1,3 +1,5 @@
+{%load staticfiles%}
+
 <!DOCTYPE html>
 <!--
 	Daraz by TEMPLATE STOCK
@@ -12,16 +14,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daraz by TEMPLATE STOCK</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}"/>
+    <link rel="stylesheet" href="{%static 'css/font-awesome.min.css'%}"/>
+    <link rel="stylesheet" href="{%static 'css/animate.css'%}"/>
 
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="{%static 'css/style.css'%}" />
 
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{%static 'js/jquery-1.11.2.min.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/bootstrap.min.js'%}"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="{%static 'js/plugins.js'%}"></script>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -332,7 +334,7 @@
           <div class="col-md-3 col-sm-6 text-center">
             <div class="wrap animated" data-animate="fadeInDown"> 
               <div class="img-team">
-                <img src="images/team-2.png" alt="" class="img-circle">
+                <img src="{%static 'images/team-2.png'%}" alt="" class="img-circle">
               </div>
 
               <h3>Ellie Morgan</h3>
@@ -354,7 +356,7 @@
           <div class="col-md-3 col-sm-6 text-center">
             <div class="wrap animated" data-animate="fadeInDown"> 
               <div class="img-team">
-                <img src="images/team-3.png" alt="" class="img-circle">
+                <img src="{%static 'images/team-3.png'%}" alt="" class="img-circle">
               </div>
 
               <h3>Elche</h3>
@@ -376,7 +378,7 @@
           <div class="col-md-3 col-sm-6 text-center">
             <div class="wrap animated" data-animate="fadeInDown"> 
               <div class="img-team">
-                <img src="images/team-4.png" alt="" class="img-circle">
+                <img src="{%static 'images/team-4.png'%}" alt="" class="img-circle">
               </div>
 
               <h3>JF Thiago</h3>
