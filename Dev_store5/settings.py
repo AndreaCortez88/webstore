@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+from pathlib import Path
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -81,8 +81,8 @@ DATABASES = {
 
     'default': {
        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Dev_store5',
-        'USER': 'DevAndrea',
+        'NAME': 'DevAndrea',
+        'USER': 'Andrea',
         'PASSWORD': '12345',
         'HOST': '127.0.0.1',
         'PORT': 5432
