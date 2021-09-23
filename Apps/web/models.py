@@ -13,7 +13,7 @@ class product(models.Model):
     class Meta:
         verbose_name='product'
         verbose_name_plural='products'
-        ondering=['nombre']
+        ordering=['nombre']
 
     def __str__(self):
         return "{0}".format(self.nombre)
