@@ -9,3 +9,11 @@ class product(models.Model):
     descripcion = models.TextField(null=False, blank=False)
     imagen1 = models.URLField(max_length=800, default='https://i.pinimg.com/736x/3a/ab/e0/3aabe0e9a520b9ad90407a82f85adb42.jpg', null=False, blank=False)
     precio = models.DecimalField(null=False, blank=False, max_digits=7, decimal_places=2)
+
+    class Meta:
+        verbose_name='product'
+        verbose_name_plural='products'
+        ondering=['nombre']
+
+    def __str__(self):
+        return "{0}".format(self.nombre)
