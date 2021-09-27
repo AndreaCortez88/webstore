@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'Dev_store5.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
+"""
 DATABASES = {
 
     'default': {
@@ -98,7 +98,7 @@ DATABASES = {
         default=config('DATABASE_URL')
     )
 }
-"""
+
 
 
 # Password validation
